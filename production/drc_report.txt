@@ -1,8 +1,8 @@
 ** Drc report for Hackboard_v1.kicad_pcb **
-** Created on 2026-07-01T10:41:36 **
+** Created on 2026-07-01T11:00:50 **
 ** Report includes: Errors, Warnings, Exclusions **
 
-** Found 48 DRC violations **
+** Found 51 DRC violations **
 [via_dangling]: Via is not connected or connected on only one layer
     Local override; warning
     @(116.0000 mm, 42.5350 mm): Via [Net-(D1-VDD)] on F.Cu - B.Cu
@@ -14,6 +14,18 @@
     Rule: board setup constraints silk; warning
     @(76.2000 mm, 30.0000 mm): Rectangle on Edge.Cuts
     @(101.0200 mm, 28.6960 mm): Segment of U1 on F.Silkscreen
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.4400 mm, 70.4950 mm): Via [Net-(D2-K)] on F.Cu - B.Cu
+    @(91.4400 mm, 70.4950 mm): Via [Net-(D2-K)] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.4400 mm, 111.7600 mm): Via [Net-(D8-K)] on F.Cu - B.Cu
+    @(91.4400 mm, 111.7600 mm): PTH pad 2 [Net-(D8-K)] of SW7
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.4400 mm, 111.7600 mm): Via [Net-(D8-K)] on F.Cu - B.Cu
+    @(91.4400 mm, 111.7600 mm): PTH pad 2 [Net-(D8-K)] of SW7
 [lib_footprint_mismatch]: Footprint 'SK6812MINI-E_fixed' does not match copy in library 'footprints'
     Local override; warning
     @(123.1900 mm, 104.9928 mm): Footprint D1
@@ -104,15 +116,15 @@
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(91.4400 mm, 86.3600 mm): Reference field of D5
-    @(91.4400 mm, 86.3600 mm): PTH pad 1 [<no net>] of D5
+    @(91.4400 mm, 86.3600 mm): PTH pad 1 [Net-(D5-K)] of D5
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(132.1200 mm, 85.8260 mm): Reference field of SW6
-    @(133.3500 mm, 86.3600 mm): PTH pad 1 [<no net>] of D7
+    @(133.3500 mm, 86.3600 mm): PTH pad 1 [Net-(D7-K)] of D7
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(94.0200 mm, 104.8760 mm): Reference field of SW7
-    @(95.2500 mm, 105.4100 mm): PTH pad 1 [<no net>] of D8
+    @(95.2500 mm, 105.4100 mm): PTH pad 1 [Net-(D8-K)] of D8
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(113.0700 mm, 95.5560 mm): Reference field of SW8
@@ -120,11 +132,11 @@
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(114.3000 mm, 87.3760 mm): Reference field of SW5
-    @(113.0300 mm, 86.3600 mm): PTH pad 1 [<no net>] of D6
+    @(113.0300 mm, 86.3600 mm): PTH pad 1 [Net-(D6-K)] of D6
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(129.5400 mm, 105.4100 mm): Reference field of D10
-    @(129.5400 mm, 105.4100 mm): PTH pad 1 [<no net>] of D10
+    @(129.5400 mm, 105.4100 mm): PTH pad 1 [Net-(D10-K)] of D10
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(89.6649 mm, 49.0751 mm): Arc of U1 on F.Silkscreen
@@ -196,7 +208,7 @@
 
 ** Found 0 unconnected pads **
 
-** Found 16 Footprint errors **
+** Found 7 Footprint errors **
 [duplicate_footprints]: Duplicate footprints
     Local override; warning
     @(81.0000 mm, 125.0000 mm): Footprint REF**
@@ -209,33 +221,6 @@
     Local override; warning
     @(81.0000 mm, 35.0000 mm): Footprint REF**
     @(148.0000 mm, 125.0000 mm): Footprint REF**
-[net_conflict]: Pad missing net given by schematic (Net-(D2-K))
-    Local override; warning
-    @(99.0600 mm, 67.3100 mm): PTH pad 1 [<no net>] of D2
-[net_conflict]: Pad missing net given by schematic (Net-(D3-K))
-    Local override; warning
-    @(107.9500 mm, 67.3100 mm): PTH pad 1 [<no net>] of D3
-[net_conflict]: Pad missing net given by schematic (Net-(D4-K))
-    Local override; warning
-    @(125.7300 mm, 67.3100 mm): PTH pad 1 [<no net>] of D4
-[net_conflict]: Pad missing net given by schematic (Net-(D5-K))
-    Local override; warning
-    @(91.4400 mm, 86.3600 mm): PTH pad 1 [<no net>] of D5
-[net_conflict]: Pad missing net given by schematic (Net-(D6-K))
-    Local override; warning
-    @(113.0300 mm, 86.3600 mm): PTH pad 1 [<no net>] of D6
-[net_conflict]: Pad missing net given by schematic (Net-(D7-K))
-    Local override; warning
-    @(133.3500 mm, 86.3600 mm): PTH pad 1 [<no net>] of D7
-[net_conflict]: Pad missing net given by schematic (Net-(D8-K))
-    Local override; warning
-    @(95.2500 mm, 105.4100 mm): PTH pad 1 [<no net>] of D8
-[net_conflict]: Pad missing net given by schematic (Net-(D9-K))
-    Local override; warning
-    @(116.8400 mm, 105.4100 mm): PTH pad 1 [<no net>] of D9
-[net_conflict]: Pad missing net given by schematic (Net-(D10-K))
-    Local override; warning
-    @(129.5400 mm, 105.4100 mm): PTH pad 1 [<no net>] of D10
 [extra_footprint]: Extra footprint
     Local override; warning
     @(148.0000 mm, 125.0000 mm): Footprint REF**

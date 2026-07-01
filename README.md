@@ -5,16 +5,25 @@ Seeed Studio XIAO RP2040. It includes an EC11 rotary encoder, a 0.91-inch
 128×32 OLED, and a single SK6812 MINI-E status LED in a two-piece 3D-printed
 enclosure.
 
-> **Fabrication status:** the project package is nearly complete, but the PCB
-> must not be ordered yet. The latest KiCad parity check reports missing net
-> assignments on one pad of each of the nine matrix diodes. See
-> [`production/PRODUCTION_BLOCKED.md`](production/PRODUCTION_BLOCKED.md).
+> **Fabrication status:** the nine switch-to-diode connections have been
+> repaired. KiCad reports zero unconnected pads and no copper-clearance
+> errors. Final Gerbers and drill files are included in
+> `production/gerbers.zip`. Review the remaining non-electrical DRC warnings
+> in `production/drc_report.txt` before ordering.
 
 ## Project images
 
 ### Overall assembly and case
 
 ![Jampad assembly in Fusion 360](assets/fusion-assembly.png)
+
+### Bottom case
+
+![Jampad bottom case](assets/bottom-case.png)
+
+### Top plate
+
+![Jampad top plate](assets/top-case.png)
 
 ### Schematic
 
@@ -79,8 +88,8 @@ The matrix diode direction is `COL2ROW`.
 | 1 | 0.91-inch 128×32 I²C OLED | SSD1306-compatible, four pins |
 | 1 | SK6812 MINI-E | Addressable RGB status LED |
 | 1 | Custom two-layer PCB | Maximum 100 × 100 mm |
-| 1 | 3D-printed top case | See `CAD/EXPORT_REQUIRED.md` |
-| 1 | 3D-printed bottom case | See `CAD/EXPORT_REQUIRED.md` |
+| 1 | 3D-printed top case | Production STEP included |
+| 1 | 3D-printed bottom case | Production STEP included |
 | 4 | M3×16 mm screws | Confirm final stack height before ordering |
 | 4 | M3 heat-set inserts | Approximately 4 mm OD × 5 mm long |
 
@@ -107,4 +116,3 @@ The compiled firmware is included as `production/firmware.uf2`.
 
 To flash it, hold the XIAO's **BOOT** button while connecting USB, then copy
 `firmware.uf2` to the `RPI-RP2` drive.
-
