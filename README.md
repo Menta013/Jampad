@@ -5,11 +5,6 @@ Seeed Studio XIAO RP2040. It includes an EC11 rotary encoder, a 0.91-inch
 128×32 OLED, and a single SK6812 MINI-E status LED in a two-piece 3D-printed
 enclosure.
 
-> **Fabrication status:** the nine switch-to-diode connections have been
-> repaired. KiCad reports zero unconnected pads and no copper-clearance
-> errors. Final Gerbers and drill files are included in
-> `production/gerbers.zip`. Review the remaining non-electrical DRC warnings
-> in `production/drc_report.txt` before ordering.
 
 ## Project images
 
