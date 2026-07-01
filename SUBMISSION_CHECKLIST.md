@@ -23,6 +23,7 @@
 - [x] Schematic screenshot
 - [x] PCB render
 - [x] BOM
+- [x] Root-level `BOM.csv`
 - [x] Description and controls
 - [ ] Replace screenshots with final polished views if desired
 

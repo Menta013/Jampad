@@ -1,0 +1,16 @@
+Item,Description,Quantity,Unit Cost USD,Total Cost USD,Notes
+Microcontroller,Seeed Studio XIAO RP2040,1,5.40,5.40,Through-hole mounted main controller
+PCB manufacturing,Two-layer Jampad PCB fabrication,1,10.00,10.00,Approximately 76.2 x 99.54 mm
+Case fabrication,3D-printed top and bottom enclosure,1,8.00,8.00,Printed from the included STEP files
+Mechanical switches,MX-compatible PCB-mount switches,9,0.50,4.50,One per key
+Keycaps,MX-compatible 1U keycaps,9,0.50,4.50,One per switch
+Matrix diodes,1N4148 through-hole diodes,9,0.05,0.45,One per switch
+OLED display,0.91-inch 128x32 I2C OLED,1,3.00,3.00,SSD1306-compatible
+Rotary encoder,EC11-style encoder,1,1.50,1.50,Rotation input
+Encoder knob,Knob matching encoder shaft,1,1.00,1.00,
+RGB LED,SK6812 MINI-E addressable LED,1,0.50,0.50,Status lighting
+Screws,M3 x 16 mm screws,4,0.25,1.00,Confirm final stack height
+Heat-set inserts,M3 inserts approximately 4 mm OD x 5 mm,4,0.25,1.00,
+USB cable,USB-C data cable,1,3.00,3.00,Programming and normal use
+Shipping and tax,Estimated fulfillment costs,1,6.15,6.15,
+TOTAL,,,,50.00,
