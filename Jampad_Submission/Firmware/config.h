@@ -1,0 +1,29 @@
+#pragma once
+
+/* XIAO RP2040 D4/D5 use RP2040 I2C1 on GP6/GP7. */
+#define I2C_DRIVER I2CD1
+#define I2C1_SDA_PIN GP6
+#define I2C1_SCL_PIN GP7
+
+/* 0.91-inch SSD1306 OLED from the KiCad schematic. */
+#define OLED_DISPLAY_128X32
+#define OLED_DISPLAY_ADDRESS 0x3C
+#define OLED_BRIGHTNESS 128
+#define OLED_TIMEOUT 60000
+
+/* EC11-style encoder. Change to 2 if one detent produces two actions. */
+#define ENCODER_MAP_KEY_DELAY 10
+
+/* One SK6812 MINI-E driven from XIAO D10 / RP2040 GP3. */
+#define WS2812_DI_PIN GP3
+#define RGBLIGHT_LED_COUNT 1
+#define RGBLIGHT_LIMIT_VAL 96
+#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
+#define RGBLIGHT_DEFAULT_HUE 128
+#define RGBLIGHT_DEFAULT_SAT 255
+#define RGBLIGHT_DEFAULT_VAL 48
+#define RGBLIGHT_SLEEP
+
+/* Hold BOOT while connecting USB to enter the UF2 bootloader. */
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
